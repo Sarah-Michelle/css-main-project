@@ -10,8 +10,8 @@
 }
 
 @font-face {
-    font-family: 'Roboto-ThinItalic';
-    src: url(../fonts/Roboto-ThinItalic.ttf) format('truetype');
+    font-family: 'Roboto-LightItalic';
+    src: url(../fonts/Roboto-LightItalic.ttf) format('truetype');
     font-weight: lighter;
 }
 
@@ -21,6 +21,7 @@
     font-family: 'Roboto-Regular', sans-serif;
     font-size: 12pt;
     justify-content: center;
+    align-content: center;
 }
 
 h1 {
@@ -41,7 +42,7 @@ h3 {
     color: #F9FAF8;
 }
 
-a, #hero-secondary-text {
+a, #hero-secondary-text, .image-text {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     text-decoration: none;
@@ -70,8 +71,7 @@ button {
     background-color: #1F2937;
     padding: 25px;
     text-align: center;
-    align-content: center;
-    justify-content: space-evenly;
+    align-items: center;
     color: #F9FAF8;
 }
 
@@ -81,38 +81,34 @@ ul.nav-bar {
     list-style-type: none;
 }
 
-.hero .hero-header, .hero .hero-bottom{
+.hero .hero-header, .hero .hero-bottom {
+    margin: auto;
     display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    padding-bottom: 25px;
+    justify-content: space-between;
+    padding: 25px;
+    width: 50vw;
 }
 
-.hero-bottom .bottom-container{
-    border: 2px solid gold;
+.hero-bottom .bottom-container {
     display: flex;
-    flex: 3;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     width:50vw;
 }
 
-section.hero-main-text{
-    border: 2px solid gold;
+section.hero-main-text {
     /* margin property : top, right, bottom, left */
     margin: 0px 10px 0px 0px; 
     display: flex;
-    flex: 2;
     flex-direction: column;
     text-align: left;
     width: 75%;
 }
 
-.hero.image-placeholder {
-    margin: 10px;
+.hero .image-placeholder {
     background-color: grey;
-    width: fit-content;
-    text-align: center;
+    width: 450px;
+    padding: 100px;
 }
 
 /* Section 2 - Random Information */
@@ -128,21 +124,26 @@ section.hero-main-text{
 }
 
 .random .box {
+    margin: auto;
+    padding: 20px;
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-evenly;
     align-content: center;
-    margin: 50px;
     width: 50vw;
 }
 
 .box1, .box2, .box3, .box4 {
-    margin: 10px;
+    margin: auto;
     border: 2px solid #3882f6;
     border-radius: 5px;
     width: 150px;
     height: 150px;
+}
+
+.box-text1, .box-text2, .box-text3, .box-text4{
+    width: 150px;
     text-align: center;
+    color:#1F2937;
 }
 
 /* Section 3 - Grey Quote */
@@ -160,7 +161,7 @@ section.hero-main-text{
 }
 
 .quote-placeholder .quote {
-    font-family: 'Roboto-ThinItalic', sans-serif;
+    font-family: 'Roboto-LightItalic', sans-serif;
     font-size: 36px;
     color: #1F2937;
     text-align: justify;
@@ -180,7 +181,7 @@ section.hero-main-text{
     justify-content: center;
 }
 
-.blue-container{
+.blue-container {
     display: flex;
     justify-content: space-around;
     align-content: center;
