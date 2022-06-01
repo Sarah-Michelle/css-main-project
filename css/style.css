@@ -75,6 +75,7 @@ button {
     color: #F9FAF8;
 }
 
+/* navigation bar */
 ul.nav-bar {
     display: flex;
     justify-content: space-evenly;
